@@ -808,12 +808,135 @@ background: linear-gradient(0deg, rgba(255,255,255,0) 42%, rgba(10,37,205,0.4879
 }
 /*                       about-us-section                             */
 
+/*                  deal section                             */
+.deal-section{
+  background-color: var(--main-hover);
+  padding: 80px 0;
+}
+.deal-note{
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 0 10px;
+  color: #fff;
+  font-family: "Tajawal-Light";
+}
+.deal-title{
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 48px;
+  font-family: "Tajawal-Bold";
+  margin: 0 0 10px;
+}
+.deal-p{
+  color: #fff;
+  font-size: 18px;
+  line-height: 27px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  max-width: 453px;
+  margin: 0 auto 40px;
+}
+.deal-blocks{
+  display: flex;
+  justify-content: space-between;
+}
+.deal-block{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.deal-step{
+  color: #fff;
+  font-size: 28px;
+  margin: 0;
+  font-family: "Tajawal-Medium";
+}
+.deal-step b{
+  font-size: 46px;
+}
+.deal-img{
+  width: 150px;
+  aspect-ratio: 1/1;
+}
+.deal-img img{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/*                  deal section                             */
+
+
+/*                         specialized section                */
+.specialized-section{
+  padding: 60px 0 90px;
+  background-color: #F9F9F9;
+}
+.specialized-note{
+  color: var(--main-color);
+  font-size: 22px;
+  font-family: "Tajawal-Medium";
+  display: flex;
+  margin: 0 0 10px;
+}
+.specialized-title{
+  color: var(--main-color);
+  font-size: 46px;
+  font-family: "Tajawal-Bold";
+  max-width: 485px;
+  display: flex;
+  margin: 0 0 20px;
+  line-height: 58px;
+}
+.specialized-blocks{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 30px 65px;
+}
+.specialized-block{
+  width: 357px;
+  height: 93px;
+  background-color: #fff;
+  box-shadow: 0px 4px 16px 0px #0000000F;
+border-radius: 12px;
+display: flex;
+padding-inline-start: 50px;
+align-items: center;
+border-left: 13px solid var(--main-hover);
+}
+.specialized-icon{
+  margin-inline-end: 30px;
+}
+.spec-title{
+  color: var(--main-color);
+  font-size: 18px;
+  font-family: "Tajawal-Bold";
+  margin: 0;
+  display: flex;
+}
+
+/*                      specialized section                         */
+
+/*                      projects section                         */
+.projects-section{
+  padding: 30px 0 80px;
+}
+/*                      projects section                         */
 
 
 /*                                   footer                            */
 footer {
   padding: 42px 0 48px;
   background-color: var(--main-color);
+  
 }
 
 
@@ -1055,6 +1178,38 @@ html[dir="rtl"] .footer-accordion.active:after {
   .nav-header .img-logo img {
     max-width: 150px;
   }
+  .deal-section{
+    padding: 50px 0;
+  }
+  .specialized-section{
+    padding: 50px 0;
+  }
+  .specialized-title{
+    font-size: 45px;
+  }
+  .specialized-blocks{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .specialized-block{
+    width: 100%;
+  }
+  .deal-title{
+    font-size: 45px;
+  }
+  .deal-p{
+    max-width: 100%;
+  }
+  .deal-blocks{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:30px;
+  }
+  .deal-block:not(:last-child){
+    margin-bottom: 30px;
+  }
+.deal-block{
+  width: 100%;
+}
   .categories{
     flex-wrap: wrap;
   }
@@ -1322,6 +1477,9 @@ color: #fff;
   .nav-header .img-logo img {
     max-width: 190px;
   }
+  .specialized-blocks {
+    grid-template-columns: repeat(2, 1fr);
+  }
   html[dir="ltr"] .nav-wrap{
     max-height: 100%;
   }
@@ -1367,6 +1525,12 @@ color: #fff;
   margin-top: 10px;
   width: 350px;
   padding: 15px 20px ;
+}
+.specialized-blocks {
+  grid-template-columns: repeat(2, 1fr);
+}
+.deal-block{
+  width: 45%;
 }
 .about-us-title{
   font-size: 31px;
