@@ -926,7 +926,44 @@ input[type=checkbox]{
   justify-content: center;
   margin: 0 auto;
 }
-
+.careers-section{
+  padding: 120px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.careers-title{
+  color: var(--main-hover);
+  font-size: 46px;
+  font-family: "Tajawal-Bold";
+  text-align: start;
+  margin: 0;
+}
+.career-p{
+  color: var(--main-color);
+  font-size: 46px;
+  text-align: start;
+  margin: 0;
+}
+.apply-btn{
+  width: 175px;
+  height: 47px;
+  background-color: var(--main-hover);
+  display: flex;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.5s;
+  color: #fff;
+  font-size: 18px;
+  text-transform: capitalize;
+  margin-top: 40px;
+}
+.apply-btn:hover{
+  background-color: var(--main-color);
+  color: #fff;
+}
 /*                  deal section                             */
 
 
@@ -1291,6 +1328,23 @@ html[dir="rtl"] .footer-accordion.active:after {
   .projects-section{
     padding: 50px 0;
   }
+  .careers-section{
+    padding: 50px 0;
+    flex-wrap: wrap;
+  }
+  .careers-text{
+    width: 100%;
+  }
+  .careers-title{
+    font-size: 40px;
+  }
+  .career-p{
+    font-size: 40px;
+  }
+  .careers-img{
+    order:-1;
+    margin-bottom: 30px;
+  }
   .projects-title{
     font-size: 45px;
     margin-bottom: 50px;
@@ -1646,6 +1700,13 @@ color: #fff;
   .about-us-figure {
     width: 400px;
     position: absolute;
+}
+.careers-section{
+  flex-wrap: nowrap;
+}
+.careers-img{
+  order: 2;
+  margin-bottom: 0;
 }
 .contact-section .about-div-cont{
   flex-wrap: nowrap;
