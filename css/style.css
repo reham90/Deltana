@@ -690,8 +690,59 @@ background: linear-gradient(0deg, rgba(255,255,255,0) 42%, rgba(10,37,205,0.4879
   margin: 0 0 30px;
  line-height: 58px;
 
+}.form-row{
+  display: flex;
+  justify-content: space-between;
+  gap:30px;
+  flex-wrap: nowrap;
+  margin-bottom: 10px;
 }
-
+.form-label{
+  color: #000;
+  font-size: 16px;
+  font-family: "Tajawal-Bold" ;
+  text-align: start;
+  margin: 0 0 10px;
+}
+.form-input-div{
+  width: 50%;
+}
+.form-input{
+  border: 1px solid #C5E0FF;
+  width: 100%;
+  height: 60px;
+  transition: 0.5s;
+  outline: none;
+  font-size: 14px;
+  color: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+}
+.form-input:focus{
+  border: 1px solid var(--main-hover);
+}
+.textarea-input{
+  width: 100%;
+  height: 70px;
+}
+.form-input-div-2{
+  width: 100%;
+}
+.accept{
+  display: flex;
+  align-items: baseline;
+}
+.accept label{
+  margin-inline-start: 20px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+input[type=checkbox]{
+  width: 18px;
+  height: 18px;
+}
 .about-p {
   text-align: start;
 
@@ -764,6 +815,10 @@ background: linear-gradient(0deg, rgba(255,255,255,0) 42%, rgba(10,37,205,0.4879
     margin-top: 0;
     padding: 20px 0 50px;
   }
+  .contact-text-div{
+    position: relative !important;
+  }
+
   .contact-us-content{
     width: 100%;
   }
@@ -974,20 +1029,76 @@ transform: scale(1.05);
   position: absolute;
   inset-inline-end: 0;
   top:0;
-  padding: 80px 40px !important;
+  padding: 40px 40px !important;
+}
+.breadcrumb{
+  background-image: url(../images/careers/01.png);
+  background-repeat: no-repeat;
+  height: 408px;
+  position: relative;
+}
+.breadcrumb-cover{
+  background-color: rgba(19, 19, 19, 0.5);
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.breadcrumb-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 408px;
+}
+.breadcrumb-p{
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  font-size: 64px;
+  font-family: "Tajawal-Bold";
 }
 /*              contact section                          */
 
 
 /*                                   footer                            */
 footer {
-  padding: 42px 0 48px;
-  background-color: var(--main-color);
+  border: 1px solid #C4C4C4;
+  padding: 30px 0 10px;
+  background-color: #fff;
   
 }
 
+.footer-p{
+  color: #4A4A4A;
+  font-size: 18px;
+  text-align: start;
+  margin: 0 0 15px;
+}
 
-
+.social{
+  list-style: none;
+  display: flex;
+ justify-content: flex-start;
+padding: 0;
+ 
+}
+.social li a{
+  color: #4A4A4A;
+  transition: 0.5s;
+}
+.social li i{
+  font-size: 30px;
+  color: #4A4A4A;
+  transition: 0.5s;
+}
+.social li:not(:last-child){
+  margin-inline-end: 5px;
+}
+.social li a:hover i{
+  color: var(--main-hover);
+}
 
 .nav-foot-cont {
   text-align: start;
@@ -995,11 +1106,12 @@ footer {
 .nav-foot-header {
   text-transform: capitalize;
   white-space: nowrap;
-  font-size: 18px;
-  color: var(--white-color);
+  font-size: 22px;
+  color: var(--main-color);
   margin-bottom: 37px;
   text-align: start;
-  font-family: "SST-ARABIC-BOLD";
+  font-family: "Tajawal-Bold";
+  margin-top: 28px;
 }
 @media (min-width: 991px) {
   .nav-wrap {
@@ -1018,8 +1130,8 @@ footer {
   max-width: 195px;
 }
 .nav-foot-link {
-  color: #fff;
-  font-size: 14px;
+  color: var(--main-color);
+  font-size: 18px;
 
   display: inline-flex;
   text-decoration: none !important;
@@ -1052,66 +1164,7 @@ footer {
   transition: 0.5s;
   border-radius: 50%;
 }
-.social-list2 li i:hover {
-  color: var(--white-color);
-  background-color: var(--main-hover);
-}
-.social-list2 li a:hover {
-  text-decoration: none;
-}
-.subscribe {
-  color: var(--white-color);
-  font-size: 16px;
-  margin-bottom: 20px;
-  display: block;
-}
-.newsletter {
-  position: relative;
-}
-.newsletter input {
-  width: 100%;
-  height: 45px;
-  background: rgb(44, 31, 111);
-  border-radius: 22px;
-  border: 2px solid transparent;
-  outline: none;
-  display: flex;
-  align-items: center;
-  color: rgb(151, 143, 193);
-  font-size: 14px;
-  padding-inline-start: 25px;
-  transition: 0.5s;
-}
-.newsletter input::placeholder {
-  color: rgb(151, 143, 193);
-  font-size: 14px;
-}
-.newsletter input:focus {
-  border: 2px solid var(--white-color);
-}
-.newsletter-button {
-  background-color: transparent;
-  border: 0;
-  outline: none;
-  position: absolute;
-  inset-inline-end: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 0;
-}
-.newsletter-button:focus {
-  outline: none;
-}
-.newsletter-button i {
-  color: var(--white-color);
-  font-size: 14px;
-}
-html[dir="ltr"] .newsletter-button i{
-  transform: scaleX(-1);
-}
+
 
 .copy-flex {
   display: -webkit-box;
@@ -1121,7 +1174,8 @@ html[dir="ltr"] .newsletter-button i{
   -ms-flex-align: center;
   align-items: center;
   justify-content: space-between;
-  padding-top: 30px;
+ padding: 15px 0;
+  border-top: 1px solid #C4C4C4;
 }
 .copy-right {
   display: -webkit-box;
@@ -1134,8 +1188,8 @@ html[dir="ltr"] .newsletter-button i{
   -ms-flex-pack: center;
   justify-content: center;
 
-  color: #fff;
-  font-size: 14px;
+  color: var(--main-color);
+  font-size: 18px;
   text-align: center;
 }
 .copy-right figure {
@@ -1225,6 +1279,12 @@ html[dir="rtl"] .footer-accordion.active:after {
   .nav-header .img-logo img {
     max-width: 150px;
   }
+  .breadcrumb-p{
+    font-size: 45px;
+  }
+  .contact-text-div{
+    padding: 40px 0px !important;
+  }
   .deal-section{
     padding: 50px 0;
   }
@@ -1277,6 +1337,15 @@ html[dir="rtl"] .footer-accordion.active:after {
   .about-div-cont{
     flex-wrap: wrap;
     margin-bottom: 50px;
+  }
+  .contact-section .about-div-cont{
+    flex-wrap: wrap;
+  }
+  .contact-us-figure{
+    width: 400px;
+  }
+  .contact-text-div{
+    padding: 40px !important;
   }
   .about-text-div{
     margin-top: 0;
@@ -1577,6 +1646,9 @@ color: #fff;
   .about-us-figure {
     width: 400px;
     position: absolute;
+}
+.contact-section .about-div-cont{
+  flex-wrap: nowrap;
 }
 .about-text-div {
   margin-top: 10px;
