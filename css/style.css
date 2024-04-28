@@ -767,6 +767,67 @@ input[type=checkbox]{
   font-size: 16px;
 
 }
+.blue-bg{
+  background: rgba(4, 12, 53, 1);
+}
+.top-header{
+  background-color: #fff;
+}
+.kayan-title{
+  color: #fff;
+  font-size: 64px;
+  font-family: "Tajawal-Bold";
+  text-align: start;
+  margin: 0 0 50px;
+}
+.kayan-p{
+  color: #fff;
+  text-align: start;
+  font-size: 32px;
+  margin: 0 0 30px;
+  max-width: 766px;
+}
+.kayan-request-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: var(--main-hover);
+  text-decoration: none;
+  width: 201px;
+  height: 54px;
+  border-radius: 8px;
+  transition: 0.5s;
+  font-size: 16px;
+  margin-inline-end: 15px;
+}
+.kayan-btns{
+  display: flex;
+}
+.kayan-request-link:hover{
+  background-color: var(--main-color);
+  text-decoration: none;
+  color: #fff;
+}
+.kayan-text{
+  width: 766px;
+}
+.kayan-youtube-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: var(--main-hover);
+  text-decoration: none;
+  width: 54px;
+  height: 54px;
+  border-radius: 8px;
+  transition: 0.5s;
+  font-size: 16px;
+}
+.kayan-img{
+  width: 600px;
+}
 .process-tab-pane{
   padding: 0 0 80px;
 }
@@ -1942,6 +2003,9 @@ color: #fff;
   .about-us-figure {
     width: 400px;
     position: absolute;
+}
+.kayan-img {
+  width: 350px;
 }
 .careers-section{
   flex-wrap: nowrap;
